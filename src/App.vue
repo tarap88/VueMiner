@@ -26,11 +26,10 @@ function countUp() {
   <main class="container-fluid">
     <section class="row">
       <div class="col-12 d-flex justify-content-center">
-        <img src="https://img.freepik.com/premium-vector/pixel-art-cheese_565656-3.jpg" alt="">
+        <img @click="countUp()" src="https://img.freepik.com/premium-vector/pixel-art-cheese_565656-3.jpg" alt="">
       </div>
       <div class="text-center fw-bold mt-3">
         Cheese Clicks: {{ cheese }}
-        <button class="btn btn-primary" @click="countUp()">+</button>
       </div>
     </section>
   </main>
